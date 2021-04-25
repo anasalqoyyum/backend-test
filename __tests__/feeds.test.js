@@ -7,7 +7,7 @@ describe("Test all public feeds", () => {
       .get("/feeds?tags=")
       .then((response) => {
         expect(response.statusCode).toBe(200);
-        expect(response.body).toHaveProperty('title', 'Uploads from everyone');
+        expect(response.body).toHaveProperty('link', 'https://www.flickr.com/photos/');
       });
   });
 });
